@@ -1,0 +1,7 @@
+.gridContainer {
+	display: flex;
+}
+
+.gridItem {
+	flex-basis: 100%;
+}
