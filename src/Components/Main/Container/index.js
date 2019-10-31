@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 import RowsPresentation from '../Presentation/RowsPresentation'
 import FormPresentation from '../Presentation/FormPresentation/'
 
+import Jumbotron from 'react-bootstrap/Jumbotron'
+import Container from 'react-bootstrap/Container'
+
 const MainContainer = () => {
 	const initialRowState = [{
 		color: "green",
@@ -49,6 +52,15 @@ const MainContainer = () => {
 
 	return (
 		<React.Fragment>
+			<Jumbotron fluid>
+				<Container>
+					<h1>FlexBox</h1>
+					<p>
+						Grid of responsive squares using flexbox
+    		</p>
+				</Container>
+			</Jumbotron>
+
 			<RowsPresentation
 				{...{ rows }}
 			/>
